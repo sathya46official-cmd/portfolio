@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="form-container">
+        <fieldset>
+            <legend><b>Registration Form</b></legend>
+            <form action="mailto:sathya46offical@gmail.com" method="post" enctype="text/plain" class="registration-form">
+
+                <label for="fullname">Full Name <span class="required">*</span>:</label>
+                <input type="text" id="fullname" name="fullname" required />
+
+                <label for="email">Your Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@gmail.com" />
+
+                <label for="mobile">Mobile Number (optional):</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10 digits" />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or inquiry..."></textarea>
+
+                <input type="submit" value="Send Email" />
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
